@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "aquirebold";
+}
+@font-face {
+    font-family: "aquirebold";
+    src: url("./AquireBold-8Ma60.otf") format("opentype");
+}
+
+.head {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.wrap {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+.item {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    width: 100%;
+    margin-inline-end: auto;
+    margin-inline-start: auto;    
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+    height: 35px;
+    line-height: 35px;
+    width: 150px;
+    background-color: gray;
+    color: black;
+    font-size: 19px;
+    border-radius: 3%;
+}
+li {
+    list-style-type: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 10px;
+}
+.logo {
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+}
+.social {
+    color: white;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+}
+.background {
+    width: 100%;
+    min-height: 545px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    text-align: center;
+    margin: 0;
+}
+@media screen and (max-width: 992px){
+    .navbar{
+        display: none;
+    }
+  }
+@media (max-width: 1200px){
+    .container{
+    padding: 0;
+    }
+}
+
+.slider-container {
+    height: 90vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    width: 100%; 
+}
+
+.slide.active {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+.more{
+    position: absolute;
+    display: block;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+}
+h1{
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.dot.active {
+    background-color: #777;
+}
+
+
+.maindocs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.upperdocs{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    margin-top: 1%;
+}
+.lowerdocs{
+    display: flex;
+    width: 100%;
+    height: 30%;
+}
+.rightup{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+.leftup{
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+.rightdown{
+    display: flex;
+    width: 45%;
+    height: 96%;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    background-image: url("imgfdocs/abstract-hexagon-simple-minimalism-wallpaper-preview.jpg");
+    margin-left: 3%;
+    margin-right: 2%;
+    border-radius: 8px;
+}
+.leftdown{
+    display: flex;
+    width: 70%;
+    height: 96%;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    background-image: url("imgfdocs/abstract-hexagon-simple-minimalism-wallpaper-preview.jpg");
+    margin-left: 1%;
+    border-radius: 8px;
+}
+.leftleftup{
+    display: flex;
+    width: 46%;
+    height: 96%;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    background-image: url("imgfdocs/abstract-hexagon-simple-minimalism-wallpaper-preview.jpg");
+    margin-left: 2%;
+    border-radius: 8px;
+}
+.leftrightup{
+    display: flex;
+    width: 46%;
+    height: 96%;
+    align-items: center;
+    justify-content: center;
+    background-color: peru;
+    background-image: url("imgfdocs/abstract-hexagon-simple-minimalism-wallpaper-preview.jpg");
+    margin-left: 4%;
+    border-radius: 8px;
+}
+.higherup{
+    display: flex;
+    width: 96%;
+    height: 46%;
+    align-items: center;
+    justify-content: center;
+    background-color: plum;
+    background-image: url("imgfdocs/abstract-hexagon-simple-minimalism-wallpaper-preview.jpg");
+    border-radius: 8px;
+}
+.lowerup{
+    display: flex;
+    width: 96%;
+    height: 46%;
+    align-items: center;
+    justify-content: center;
+    background-color: palevioletred;
+    background-image: url("imgfdocs/abstract-hexagon-simple-minimalism-wallpaper-preview.jpg");
+    margin-top: 4%;
+    border-radius: 8px;
+}
+.docsbutton{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+  will-change: transform;
+}
+
+.docsbutton:disabled {
+  pointer-events: none;
+}
+
+.docsbutton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.docsbutton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
